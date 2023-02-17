@@ -5,11 +5,10 @@ import java.util.Arrays;
 /**
  * 归并排序
  */
-@Deprecated
 public class MergeSort {
 
     public static void main(String[] args){
-        int[] arr = new int[]{5, 7, 6, 1, 9, 8, 4, 3, 2};
+        int[] arr = new int[]{5, 7, 6, 1, 9, 8, 4, 3, 2, 5};
         sort(arr, 0, arr.length - 1);
         System.out.println(Arrays.toString(arr));
     }
@@ -36,10 +35,7 @@ public class MergeSort {
         int[] temp = Arrays.copyOf(arr, arr.length);
 
         while(i <= lEnd && j <= rEnd){
-            if(i == 9 || j == 9){
-                System.out.println("123");
-                return;
-            }
+
             // 如果左数组元素大于右数组元素
             System.out.println("i=" + i + ", j=" + j + ", ai=" + ai);
             if(temp[i] > temp[j]){
