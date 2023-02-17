@@ -8,7 +8,7 @@ import java.util.Arrays;
 public class BubbleSort {
 
     public static void main(String[] args){
-        int[] arr = new int[]{5, 7, 6, 1, 9, 8, 4, 3, 2};
+        int[] arr = new int[]{5, 7, 6, 1, 9, 8, 4, 3, 2 ,5};
 
         for(int i = 0; i < arr.length; i++){
             for(int j = 0; j < arr.length - 1 - i; j++){

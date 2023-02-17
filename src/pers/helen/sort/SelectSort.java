@@ -8,7 +8,7 @@ import java.util.Arrays;
 public class SelectSort {
 
     public static void main(String[] args){
-        int[] arr = new int[]{5, 7, 6, 1, 9, 8, 4, 3, 2};
+        int[] arr = new int[]{5, 7, 6, 1, 9, 8, 4, 3, 2, 5};
         sort(arr);
         System.out.println(Arrays.toString(arr));
     }
@@ -16,12 +16,17 @@ public class SelectSort {
     public static void sort(int[] arr){
         for(int i = 0; i < arr.length - 1; i++){
             int min = arr[i];
+            int minIndex = i;
             for(int j = i + 1; j < arr.length; j++){
                 if(arr[j] < min){
-                    int temp = arr[i];
-                    arr[i] = arr[j];
-                    arr[j] = temp;
+                    min = arr[j];
+                    minIndex = j;
                 }
+            }
+            if(minIndex!=i){
+                int temp = arr[i];
+                arr[i] = arr[minIndex];
+                arr[minIndex] = temp;
             }
         }
     }

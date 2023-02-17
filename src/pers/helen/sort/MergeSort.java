@@ -34,20 +34,20 @@ public class MergeSort {
         int i = lStart;
         int j = rStart;
         int[] temp = Arrays.copyOf(arr, arr.length);
+
         while(i <= lEnd && j <= rEnd){
             if(i == 9 || j == 9){
                 System.out.println("123");
                 return;
             }
             // 如果左数组元素大于右数组元素
-            System.out.println("i=" + i + ", j=" + j+ ", ai=" + ai);
+            System.out.println("i=" + i + ", j=" + j + ", ai=" + ai);
             if(temp[i] > temp[j]){
                 // 则让右数组这位提上来，同时右数组下标和结果数组下标移动一位
                 arr[j] = temp[i];
                 arr[ai++] = temp[j++];
                 // 原来被覆盖的左数组元素放到原右数组的位置上来
-            }
-            else{
+            }else{
                 arr[ai] = temp[j];
                 arr[ai++] = temp[i++];
             }

@@ -10,6 +10,8 @@ public class CountSort {
     public static void main(String[] args){
         int[] arr = new int[]{5, 7, 6, 1, 9, 8, 3, 2, 6, 9, 5, 5};
         System.out.println(Arrays.toString(sort(arr)));
+
+        System.out.println(3/2);
     }
 
     private static int[] sort(int[] arr){

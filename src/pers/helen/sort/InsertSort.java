@@ -8,7 +8,7 @@ import java.util.Arrays;
 public class InsertSort {
 
     public static void main(String[] args){
-        int[] arr = new int[]{5, 7, 6, 1, 9, 8, 4, 3, 2};
+        int[] arr = new int[]{5, 7, 6, 1, 9, 8, 4, 3, 2, 5};
         System.out.println(Arrays.toString(sort(arr)));
     }
 
